@@ -1,0 +1,19 @@
+
+include ./themes/GitHub Dark.conf
+
+
+font_family      MesloLGS NF
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+font_size 14.0
+
+enable_audio_bell yes
+
+# color-schemes
+background_opacity 0.95
+
+shell /usr/bin/fish
+
+map f11 toggle_fullscreen
+
