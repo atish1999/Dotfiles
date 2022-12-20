@@ -196,6 +196,7 @@ schemes:
     primary:
       background: '#1b2b34'
       foreground: '#d8dee9'
+      # foreground: '#ffffff'
 
     # Colors the cursor will use if `custom_cursor_colors` is true
     cursor:
@@ -373,7 +374,7 @@ schemes:
 # *SolarizedLight
 # *SolarizedDark
 # *TomorrowNight
-colors: *Nord
+colors: *MonokaiPro
  
 #######################################
 ##       END OF COLOR SCHEMES        ##
@@ -382,8 +383,8 @@ font:
   normal:
     # family: "Fira Code iScript"
     # family: "JetBrains Mono Medium"
-    family: "Source Code Pro Medium"
-    # family: "Mogambo"
+    # family: "Source Code Pro Medium"
+    family: "Mogambo"
     # family: "CaskaydiaCove NF"
     style: Regular
   bold:
@@ -423,7 +424,7 @@ window:
   padding:
     x: 2
     y: 2
-  opacity: 1.0
+  opacity: 0.95
   dimensions:
     columns: 80
     lines: 20
