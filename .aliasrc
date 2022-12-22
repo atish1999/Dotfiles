@@ -1,0 +1,6 @@
+#! /bin/bash
+
+## hybernate
+alias hb='sudo systemctl hibernate'
+
+
