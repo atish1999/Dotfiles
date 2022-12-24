@@ -1,6 +1,41 @@
 #! /bin/bash
 
-## hybernate
-alias hb='sudo systemctl hibernate'
+## source config files
+alias sb=". ~/.bashrc"
+alias sz=". ~/.zshrc"
+alias sf=". ~/.config/fish/config.fish"
 
+
+colorscript random
+
+alias ls='exa -l --icons --header'
+alias lc='colorls'
+alias hb="sudo systemctl hibernate"
+alias cls="clear"
+
+
+# tree view
+alias tree='exa -l --icons --header --tree'
+alias tl1='tree --level=1'
+alias tl2='tree --level=2'
+alias tl3='tree --level=3'
+alias tl4='tree --level=4'
+alias ll='tl1'
+alias lla='tl1 -a'
+
+### sourcing config files
+alias sf='source ~/.config/fish/config.fish'
+alias sb='source ~/.bashrc'
+alias sz='source ~/.zshrc'
+alias update="sudo pacman-mirrors --fasttrack 5 && sudo pacman -Syyyu && yay -Sua"
+export hddrive="/run/media/leo/Data/"
+
+# alias aura="sudo aura"
+
+# [ -d /opt/anaconda/bin ] && export PATH="$PATH:/opt/anaconda/bin"
+alias vim="nvim"
+alias vi="nvim"
+
+# export NVIM_BEGINNER="~/.config/nvim-beginner"
+# alias nvb='XDG_DATA_HOME=$NVIM_BEGINNER/share XDG_CONFIG_HOME=$NVIM_BEGINNER nvim'
 

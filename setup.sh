@@ -12,8 +12,8 @@ for file in $(ls $config_folder);
 do
   source="$config_folder/$file"
   destin="$HOME/.config/$file"
-  echo "$source --> $destin"
-  #ln -svf $source $destin
+  # echo "$source --> $destin"
+  ln -svf $source $destin
 done
 
 

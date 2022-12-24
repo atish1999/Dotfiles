@@ -12,3 +12,4 @@ export STARSHIP_CONFIG="$HOME/.config/starship/danil.toml"
 
 eval "$(starship init bash)"
 
+source /usr/share/nvm/init-nvm.sh
