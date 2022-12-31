@@ -20,4 +20,7 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 
+-- set gui font for neovide
+vim.opt.guifont = { "Liga Code New Roman", ":h12" }
+
 
