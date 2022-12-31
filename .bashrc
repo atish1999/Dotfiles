@@ -8,8 +8,13 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-export STARSHIP_CONFIG="$HOME/.config/starship/danil.toml"
+# source /usr/share/nvm/init-nvm.sh
 
+export STARSHIP_CONFIG="$HOME/.config/starship/bracketed-segments.toml"
+# export STARSHIP_CONFIG="$HOME/.config/starship/danil.toml"
 eval "$(starship init bash)"
 
-source /usr/share/nvm/init-nvm.sh
+[ -f ~/.aliasrc ] && . ~/.aliasrc
+
+# Path for node, npm, npx
+[ -d "$HOME/.nvm/versions/node/v18.12.1/bin" ] && PATH="$HOME/.nvm/versions/node/v18.12.1/bin:$PATH"

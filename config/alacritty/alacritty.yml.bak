@@ -449,10 +449,7 @@ selection:
   save_to_clipboard: true
 
 live_config_reload: true
-shell:
-   program: /bin/zsh
-   args:
-     - --login
+
 # key_bindings:
 #   - { key: V, mods: Control|Shift, action: Paste }
 #   - { key: C, mods: Control|Shift, action: Copy }
