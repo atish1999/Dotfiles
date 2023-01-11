@@ -39,6 +39,7 @@ export hddrive="/run/media/pac/Data/"
 # [ -d /opt/anaconda/bin ] && export PATH="$PATH:/opt/anaconda/bin"
 alias vim="nvim"
 alias vi="nvim"
+alias gvim="neovide"
 
 # export NVIM_BEGINNER="~/.config/nvim-beginner"
 # alias nvb='XDG_DATA_HOME=$NVIM_BEGINNER/share XDG_CONFIG_HOME=$NVIM_BEGINNER nvim'
@@ -61,3 +62,6 @@ alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
 
+export NVIM_BEGINNER="$HOME/.config/nvim-beginner"
+# nvb
+alias nvb='XDG_DATA_HOME=$NVIM_BEGINNER/share XDG_CONFIG_HOME=$NVIM_BEGINNER/ nvim'
