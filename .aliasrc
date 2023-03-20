@@ -62,6 +62,45 @@ alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
 
-export NVIM_BEGINNER="$HOME/.config/nvim-beginner"
-# nvb
-alias nvb='XDG_DATA_HOME=$NVIM_BEGINNER/share XDG_CONFIG_HOME=$NVIM_BEGINNER/ nvim'
+# nvchad
+alias nvc='XDG_DATA_HOME=$hddrive/.config/NvChad/share \
+           XDG_CACHE_HOME=$hddrive/.config/NvChad/cache \
+           XDG_CONFIG_HOME=$hddrive/.config/NvChad/ nvim'
+
+# nvchad graphical
+alias nvcg='XDG_DATA_HOME=$hddrive/.config/NvChad/share \
+            XDG_CACHE_HOME=$hddrive/.config/NvChad/cache \
+            XDG_CONFIG_HOME=$hddrive/.config/NvChad/ nohup neovide'
+
+# spacevim
+alias svim='XDG_DATA_HOME=$hddrive/.config/SpaceVim/share \
+           XDG_CACHE_HOME=$hddrive/.config/SpaceVim/cache \
+           XDG_CONFIG_HOME=$hddrive/.config/SpaceVim/ nvim'
+
+# spacevim graphical
+alias svimg='XDG_DATA_HOME=$hddrive/.config/SpaceVim/share \
+            XDG_CACHE_HOME=$hddrive/.config/SpaceVim/cache \
+            XDG_CONFIG_HOME=$hddrive/.config/SpaceVim/ nohup neovide'
+
+# lunarvim
+alias lvim='XDG_DATA_HOME=$hddrive/.config/LunarVim/share \
+           XDG_CACHE_HOME=$hddrive/.config/LunarVim/cache \
+           XDG_CONFIG_HOME=$hddrive/.config/LunarVim/ nvim'
+
+# lunarvim graphical
+alias lvimg='XDG_DATA_HOME=$hddrive/.config/LunarVim/share \
+            XDG_CACHE_HOME=$hddrive/.config/LunarVim/cache \
+            XDG_CONFIG_HOME=$hddrive/.config/LunarVim/ nohup neovide'
+
+# Yutkat
+alias uvim='XDG_DATA_HOME=$hddrive/.config/Uvim/share \
+           XDG_CACHE_HOME=$hddrive/.config/Uvim/cache \
+           XDG_CONFIG_HOME=$hddrive/.config/Uvim/ nvim'
+# lazynvim config
+alias nvi='XDG_DATA_HOME=$hddrive/.config/Lnvim/share \
+           XDG_CACHE_HOME=$hddrive/.config/Lnvim/cache \
+           XDG_CONFIG_HOME=$hddrive/.config/Lnvim/ nvim'
+
+# anaconda
+alias conda='/opt/anaconda/bin/conda'
+alias anaconda-navigator='/opt/anaconda/bin/anaconda-navigator'

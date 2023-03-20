@@ -13,7 +13,10 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'ellisonleao/gruvbox.nvim'
+  use {
+    'ellisonleao/gruvbox.nvim',
+    -- disable = true
+  }
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
@@ -41,6 +44,20 @@ return require('packer').startup(function(use)
 
   -- colorscheme
   use 'sainnhe/everforest'
+  use {'nyoom-engineering/oxocarbon.nvim'}
+  use {'lunarvim/horizon.nvim'}
+  
+  -- startup screen
+  use {
+    'goolord/alpha-nvim',
+    requires = { 'nvim-tree/nvim-web-devicons' },
+  }
+
+  -- autopairs
+  use {
+    'windwp/nvim-autopairs',
+  }
+
   
 
   -- Automatically set up your configuration after cloning packer.nvim

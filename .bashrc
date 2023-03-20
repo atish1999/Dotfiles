@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+# PS1='[\u@\h \W]\$ '
 
 # source /usr/share/nvm/init-nvm.sh
 
@@ -18,3 +18,6 @@ eval "$(starship init bash)"
 
 # Path for node, npm, npx
 [ -d "$HOME/.nvm/versions/node/v18.12.1/bin" ] && PATH="$HOME/.nvm/versions/node/v18.12.1/bin:$PATH"
+
+
+[[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
