@@ -57,7 +57,14 @@ return require('packer').startup(function(use)
   use {
     'windwp/nvim-autopairs',
   }
-
+  
+  -- comment
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
   
 
   -- Automatically set up your configuration after cloning packer.nvim

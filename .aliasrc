@@ -3,20 +3,18 @@
 # root privileges
 alias doas="doas --"
 
-
 ## source config files
 alias sb=". ~/.bashrc"
 alias sz=". ~/.zshrc"
 alias sf=". ~/.config/fish/config.fish"
-
 
 colorscript random
 
 alias ls='exa -l --icons --header'
 alias lc='colorls'
 alias hb="sudo systemctl hibernate"
+alias pf='poweroff'
 alias cls="clear"
-
 
 # tree view
 alias tree='exa -l --icons --header --tree'
@@ -26,6 +24,10 @@ alias tl3='tree --level=3'
 alias tl4='tree --level=4'
 alias ll='tl1'
 alias lla='tl1 -a'
+
+# export manpager as bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 
 ### sourcing config files
 alias sf='source ~/.config/fish/config.fish'
@@ -97,10 +99,18 @@ alias uvim='XDG_DATA_HOME=$hddrive/.config/Uvim/share \
            XDG_CACHE_HOME=$hddrive/.config/Uvim/cache \
            XDG_CONFIG_HOME=$hddrive/.config/Uvim/ nvim'
 # lazynvim config
-alias nvi='XDG_DATA_HOME=$hddrive/.config/Lnvim/share \
+# alias vi='XDG_DATA_HOME=$hddrive/.config/Lnvim/share \
+#            XDG_CACHE_HOME=$hddrive/.config/Lnvim/cache \
+#            XDG_CONFIG_HOME=$hddrive/.config/Lnvim/ nvim'
+
+alias vig='XDG_DATA_HOME=$hddrive/.config/Lnvim/share \
            XDG_CACHE_HOME=$hddrive/.config/Lnvim/cache \
-           XDG_CONFIG_HOME=$hddrive/.config/Lnvim/ nvim'
+           XDG_CONFIG_HOME=$hddrive/.config/Lnvim/ nohup neovide'
 
 # anaconda
 alias conda='/opt/anaconda/bin/conda'
 alias anaconda-navigator='/opt/anaconda/bin/anaconda-navigator'
+
+# alias for aura
+alias aura='sudo aura'
+# [ -f /opt/anaconda/etc/profile.d/conda.sh ] && source /opt/anaconda/etc/profile.d/conda.sh
