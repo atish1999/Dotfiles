@@ -464,6 +464,7 @@ shell:
 #   - { key: N, mods: Control, action: SpawnNewInstance }
 key_bindings:
   # (Windows, Linux, and BSD only)
+  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
   - { key: V, mods: Control|Shift, action: Paste }
   - { key: C, mods: Control|Shift, action: Copy }
   - { key: Insert, mods: Shift, action: PasteSelection }
