@@ -4,6 +4,7 @@
 # Path for node, npm, npx
 [ -d "$HOME/.nvm/versions/node/v18.12.1/bin" ] && PATH="$HOME/.nvm/versions/node/v18.12.1/bin:$PATH"
 [ -d "$HOME/.local/bin" ] && PATH="$HOME/.local/bin:$PATH"
+[ -d "/home/pac/.cargo/bin" ] && PATH="/home/pac/.cargo/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
